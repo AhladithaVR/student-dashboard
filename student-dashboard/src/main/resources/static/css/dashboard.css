@@ -1,0 +1,43 @@
+.welcome{
+
+    color:#666;
+
+    margin-bottom:30px;
+
+    font-size:18px;
+
+}
+
+.dashboard-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+    margin-bottom:25px;
+
+}
+
+.card{
+
+    text-align:center;
+
+}
+
+.card h3{
+
+    color:#555;
+
+    margin-bottom:10px;
+
+}
+
+.card h2{
+
+    font-size:42px;
+
+    color:#2563EB;
+
+}

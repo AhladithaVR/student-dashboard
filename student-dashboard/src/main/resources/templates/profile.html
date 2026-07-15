@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="/css/common.css">
+
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>StudentHub</h2>
+
+    <a href="/dashboard">🏠 Dashboard</a>
+
+    <a href="/students">👨 Students</a>
+
+    <a href="/tasks">📝 Tasks</a>
+
+    <a href="/attendance">📅 Attendance</a>
+
+    <a href="/reports">📊 Reports</a>
+
+    <a href="/profile">👤 Profile</a>
+
+    <a href="/" onclick="localStorage.removeItem('token')">🚪 Logout</a>
+
+</div>
+
+<div class="main">
+
+    <div class="profile-card">
+
+        <h1>My Profile</h1>
+
+        <form id="profileForm">
+
+            <input type="text" id="name" placeholder="Name">
+
+            <input type="email" id="email" placeholder="Email">
+
+            <input type="password" id="password" placeholder="New Password">
+
+            <button type="submit">Update Profile</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="/js/profile.js"></script>
+
+</body>
+
+</html>

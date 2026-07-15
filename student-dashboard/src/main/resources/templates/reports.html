@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reports</title>
+
+    <link rel="stylesheet" href="/css/reports.css">
+    <link rel="stylesheet" href="/css/common.css">
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>StudentHub</h2>
+
+    <a href="/dashboard">🏠 Dashboard</a>
+
+    <a href="/students">👨 Students</a>
+
+    <a href="/tasks">📝 Tasks</a>
+
+    <a href="/attendance">📅 Attendance</a>
+
+    <a href="/reports">📊 Reports</a>
+
+    <a href="/profile">👤 Profile</a>
+
+    <a href="/" onclick="localStorage.removeItem('token')">🚪 Logout</a>
+
+</div>
+
+<div class="main">
+
+<h1>Reports Dashboard</h1>
+
+<div class="cards">
+
+<div class="card">
+
+<h2 id="students">0</h2>
+
+<p>Total Students</p>
+
+</div>
+
+<div class="card">
+
+<h2 id="tasks">0</h2>
+
+<p>Total Tasks</p>
+
+</div>
+
+<div class="card">
+
+<h2 id="attendance">0</h2>
+
+<p>Total Attendance</p>
+
+</div>
+
+</div>
+
+<div class="chart">
+
+<canvas id="barChart"></canvas>
+
+</div>
+
+<div class="chart">
+
+<canvas id="pieChart"></canvas>
+
+</div>
+
+</div>
+
+<script src="/js/reports.js"></script>
+
+</body>
+</html>s

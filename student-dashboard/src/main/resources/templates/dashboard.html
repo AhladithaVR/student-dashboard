@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="/css/dashboard.css">
+<link rel="stylesheet" href="/css/common.css">
+</head>
+
+<body>
+
+
+<div class="sidebar">
+
+    <h2>StudentHub</h2>
+
+    <a href="/dashboard">🏠 Dashboard</a>
+    <a href="/students">👨 Students</a>
+    <a href="/tasks">📝 Tasks</a>
+    <a href="/attendance">📅 Attendance</a>
+    <a href="/reports">📊 Reports</a>
+    <a href="/profile">👤 Profile</a>
+    <a href="/" onclick="localStorage.removeItem('token')">🚪 Logout</a>
+
+</div>
+
+<div class="main">
+
+    <h1>Dashboard</h1>
+
+    <p class="welcome">
+        Welcome back! Here's an overview of your Student Management System.
+    </p>
+
+    <div class="dashboard-cards">
+
+        <div class="card">
+            <h3>Total Students</h3>
+            <h2 id="totalStudents">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Total Tasks</h3>
+            <h2 id="totalTasks">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Attendance Records</h3>
+            <h2 id="totalAttendance">0</h2>
+        </div>
+
+    </div>
+
+    <div class="dashboard-cards">
+
+        <div class="card">
+            <h3>Present</h3>
+            <h2 id="presentCount">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Absent</h3>
+            <h2 id="absentCount">0</h2>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/js/dashboard.js"></script>
+
+</body>
+
+</html>

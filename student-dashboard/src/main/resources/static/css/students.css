@@ -1,0 +1,246 @@
+/* Students Page */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f1f5f9;
+}
+
+
+/* Main Container */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    animation: slideIn 0.6s ease;
+}
+
+
+/* Heading */
+
+h1 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 30px;
+}
+
+
+
+/* Form */
+
+#studentForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+
+#studentForm input {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+
+#studentForm input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37,99,235,0.3);
+}
+
+
+
+/* Button */
+
+button {
+    grid-column: span 2;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+
+/* Table */
+
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+thead {
+    background: #1e40af;
+    color: white;
+}
+
+
+th {
+    padding: 14px;
+    text-align: center;
+}
+
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+
+tbody tr:hover {
+    background: #eff6ff;
+}
+
+
+
+/* Action buttons created by JS */
+
+td button {
+    width: auto;
+    padding: 8px 14px;
+    margin: 3px;
+    font-size: 13px;
+}
+
+
+td button:first-child {
+    background: #f59e0b;
+}
+
+
+td button:first-child:hover {
+    background: #d97706;
+}
+
+
+td button:last-child {
+    background: #dc2626;
+}
+
+
+td button:last-child:hover {
+    background: #b91c1c;
+}
+
+
+
+/* Animation */
+
+@keyframes slideIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+
+    #studentForm {
+        grid-template-columns: 1fr;
+    }
+
+
+    button {
+        grid-column: span 1;
+    }
+
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+}
+/* ---------- Top Bar ---------- */
+
+.top-bar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+    gap:15px;
+
+}
+
+.top-bar input{
+
+    flex:1;
+
+    padding:12px 15px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+}
+
+.top-bar button{
+
+    background:#2563EB;
+
+    color:white;
+
+    padding:12px 18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.top-bar button:hover{
+
+    background:#1D4ED8;
+
+}

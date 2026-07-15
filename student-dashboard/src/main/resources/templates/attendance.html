@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="/css/attendance.css">
+<link rel="stylesheet" href="/css/common.css">
+<h1>Attendance Management</h1>
+
+<form id="attendanceForm">
+
+    <input type="number" id="studentId" placeholder="Student ID" required>
+
+    <input type="text" id="studentName" placeholder="Student Name" required>
+
+    <input type="date" id="date" required>
+
+    <select id="status">
+
+        <option value="Present">Present</option>
+
+        <option value="Absent">Absent</option>
+
+    </select>
+
+    <button type="submit">Save Attendance</button>
+
+</form>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>Student ID</th>
+<th>Name</th>
+<th>Date</th>
+<th>Status</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="attendanceTable"></tbody>
+
+</table>
+
+<script src="/js/attendance.js"></script>

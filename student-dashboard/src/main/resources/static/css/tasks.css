@@ -1,0 +1,210 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body{
+
+    background:#f4f7fb;
+    padding:30px;
+
+}
+
+
+/* Main container */
+
+.container{
+
+    width:90%;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+
+
+h1{
+
+    text-align:center;
+    margin-bottom:25px;
+    color:#333;
+
+}
+
+
+
+/* Form */
+
+#taskForm{
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+}
+
+
+
+input,
+textarea,
+select{
+
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+
+}
+
+
+textarea{
+
+    height:100px;
+    resize:none;
+
+}
+
+
+
+button{
+
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    transition:0.3s;
+
+}
+
+
+button:hover{
+
+    background:#1d4ed8;
+    transform:translateY(-2px);
+
+}
+
+
+
+/* Table */
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+    margin-top:25px;
+
+}
+
+
+th{
+
+    background:#2563eb;
+    color:white;
+    padding:12px;
+
+}
+
+
+td{
+
+    padding:12px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+
+}
+
+
+tr:hover{
+
+    background:#f1f5f9;
+
+}
+
+
+
+/* Action buttons */
+
+td button{
+
+    padding:8px 12px;
+    margin:3px;
+    font-size:13px;
+
+}
+
+
+td button:first-child{
+
+    background:#16a34a;
+
+}
+
+
+td button:first-child:hover{
+
+    background:#15803d;
+
+}
+
+
+td button:last-child{
+
+    background:#dc2626;
+
+}
+
+
+td button:last-child:hover{
+
+    background:#b91c1c;
+
+}
+
+
+
+/* Mobile responsive */
+
+@media(max-width:768px){
+
+
+body{
+
+    padding:10px;
+
+}
+
+
+.container{
+
+    width:100%;
+    padding:20px;
+
+}
+
+
+table{
+
+    display:block;
+    overflow-x:auto;
+
+}
+
+
+h1{
+
+    font-size:24px;
+
+}
+
+
+}

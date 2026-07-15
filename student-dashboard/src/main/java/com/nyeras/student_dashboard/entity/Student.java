@@ -1,5 +1,6 @@
 package com.nyeras.student_dashboard.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -18,7 +19,8 @@ public class Student {
     private String email;
     private String phone;
     private String course;
-    private Integer year;
+    @Column(name = "student_year")
+private Integer year;
     private String department;
 
     public Student() {

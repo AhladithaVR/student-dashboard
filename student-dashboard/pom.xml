@@ -10,8 +10,8 @@
 <groupId>com.nyeras</groupId>
 <artifactId>student-dashboard</artifactId>
 <version>0.0.1-SNAPSHOT</version>
-<name/>
-<description/>
+<name>student-dashboard</name>
+<description>Student Attendance and Performance Management System</description>
 <url/>
 <licenses>
 <license/>
